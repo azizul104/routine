@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBRMS Application</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif; /* A nice default sans-serif font */
+    }
+    /* Custom scrollbar styles */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px; /* Width of the vertical scrollbar */
+      height: 6px; /* Height of the horizontal scrollbar */
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent; /* Transparent track */
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1; /* slate-300, thumb color */
+      border-radius: 10px; /* Rounded corners for the thumb */
+      border: 1px solid transparent; /* Optional: adds a bit of padding around thumb */
+      background-clip: content-box; /* Ensures border doesn't make thumb thicker */
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background-color: #94a3b8; /* slate-400, thumb color on hover */
+    }
+    /* For Firefox */
+    .custom-scrollbar {
+      scrollbar-width: thin; /* "thin" or "auto" or "none" */
+      scrollbar-color: #cbd5e1 transparent; /* thumb color track color */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "@/": "./"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-100">
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

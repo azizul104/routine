@@ -1,0 +1,6 @@
+{
+  "name": "RBRMS (Class Room)",
+  "description": "A React application with a homepage featuring a sidebar and a 'Program' button. This application is designed to manage RBRMS related tasks.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
